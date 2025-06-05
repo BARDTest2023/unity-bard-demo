@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="utf-8">
+<base href="clickscore/">    
+<meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity Web Player | BARD DEMO</title>
+    <title>Unity Web Player | clickscore</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,9 +21,10 @@
       <div id="unity-footer">
         <div id="unity-logo-title-footer"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">BARD DEMO</div>
+        <div id="unity-build-title">clickscore</div>
       </div>
     </div>
+	<script src="Build/clickscore.loader.js"></script>
     <script>
       var canvas = document.querySelector("#unity-canvas");
 
@@ -52,15 +54,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/2build.loader.js";
+      var loaderUrl = buildUrl + "/clickscore.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/2build.data",
-        frameworkUrl: buildUrl + "/2build.framework.js",
-        codeUrl: buildUrl + "/2build.wasm",
+        dataUrl: buildUrl + "/clickscore.data",
+        frameworkUrl: buildUrl + "/clickscore.framework.js",
+        codeUrl: buildUrl + "/clickscore.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "BARD DEMO",
+        productName: "clickscore",
         productVersion: "0.1.0",
         showBanner: unityShowBanner,
       };
